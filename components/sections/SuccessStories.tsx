@@ -6,21 +6,22 @@ import { gridPattern, radialGradient } from "@/lib/patterns";
 
 const stories = [
   {
-    name: "John Smith",
-    company: "Tech Solutions Inc.",
-    revenue: "$2.1M",
+    name: "Jorge Salaberry",
+    company: "Salaberry",
+    username: "salaberryrepuestos",
+    revenue: "",
     image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop",
-    videoThumbnail: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=720&h=1280&fit=crop",
-    videoUrl: "https://player.vimeo.com/video/824804225",
-    title: "From $50K to $2.1M in 12 Months",
-    description: "Using our proven growth framework, John transformed his tech consultancy into a 7-figure powerhouse. Learn the exact strategies that made this possible.",
+    videoThumbnail: "/salaberry-success.png",
+    videoUrl: "https://player.vimeo.com/video/1040623634",
+    title: "De 0 a +200k de views en 3 meses",
+    description: "Utilizamos estrategias de contenido para hacer crecer su redes sociales para que pueda vender sus productos.",
     socialStats: {
       posts: "1.2K",
       followers: "45.6K",
       following: "892"
     }
   },
-  {
+/*   {
     name: "Sarah Johnson",
     company: "Digital Dynamics",
     revenue: "$1.8M",
@@ -34,7 +35,7 @@ const stories = [
       followers: "38.9K",
       following: "1.1K"
     }
-  }
+  } */
 ];
 
 export function SuccessStories() {
@@ -48,9 +49,9 @@ export function SuccessStories() {
       
       <div className="container mx-auto relative">
         <h2 className="text-5xl font-black text-center mb-16">
-          Success Stories from Our{" "}
-          <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#ffb11a] to-[#ff8c00]">
-            Happy Clients
+          RESULTADOS DE{" "}
+          <span className="text-5xl font-black mb-6 bg-clip-text text-transparent bg-gradient-to-r to-white from-[#FF6B00]">
+            NUESTROS CLIENTES
           </span>
         </h2>
         
@@ -92,7 +93,7 @@ export function SuccessStories() {
                 </div>
                 
                 <h3 className="text-2xl font-semibold mt-2">
-                  <span className="bg-[rgba(255,177,26,0.1)] px-2 py-1 rounded text-white">
+                  <span className="bg-[#FF6B00]/20 px-2 py-1 rounded text-white">
                     {story.title}
                   </span>
                 </h3>
@@ -111,7 +112,7 @@ export function SuccessStories() {
                       height={32}
                       className="rounded-full"
                     />
-                    <span className="text-gray-400">@{story.name.toLowerCase().replace(' ', '')}</span>
+                    <span className="text-gray-400">@{story.username}</span>
                   </div>
                   <div className="flex gap-4 text-sm text-gray-400">
                     <span>{story.socialStats.posts} posts</span>
@@ -121,12 +122,13 @@ export function SuccessStories() {
                 </div>
 
                 {/* Metrics Card */}
-                <div className="mt-4 bg-black/40 rounded-xl p-4 border border-white/5">
+                {story.revenue && <div className="mt-4 bg-black/40 rounded-xl p-4 border border-white/5">
                   <div className="text-sm text-gray-400">Revenue (USD)</div>
                   <div className="text-2xl font-bold font-mono text-white">
                     {story.revenue}
                   </div>
                 </div>
+                }
               </div>
             </div>
           ))}

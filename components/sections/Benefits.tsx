@@ -6,6 +6,7 @@ import { RevenueChart } from "./benefits/RevenueChart";
 import { IconDisplay } from "./benefits/IconDisplay";
 import { SettingsDisplay } from "./benefits/SettingsDisplay";
 import { benefits } from "./benefits/benefits-data";
+import { FAQCTAButton } from "./faq/CTAButton";
 
 export function Benefits() {
   return (
@@ -52,6 +53,9 @@ export function Benefits() {
             </BenefitCard>
           ))}
         </div>
+      </div>
+      <div className="flex mt-24 justify-center">
+          <FAQCTAButton />
       </div>
     </section>
   );

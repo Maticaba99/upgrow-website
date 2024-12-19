@@ -1,7 +1,7 @@
 "use client";
 
-import { CustomButton } from "@/components/ui/custom-button";
 import { gridPattern, radialGradient } from "@/lib/patterns";
+import { FAQCTAButton } from "./faq/CTAButton";
 
 export function Hero() {
   return (
@@ -14,12 +14,17 @@ export function Hero() {
       
       <div className="container max-w-6xl relative">
         <div className="text-center">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 text-white">
-            Discover How We Help Businesses{" "}
-            <span className="text-[#ffb11a]">10X Their Revenue</span> in 12 Months
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">
+          CÓMO ESCALAR
+          {" "}
+            <span className="font-black mb-6 bg-clip-text text-transparent bg-gradient-to-r to-white from-[#FF6B00]">TU NEGOCIO ONLINE</span> 
+            <br/>
+            EN 90 DÍAS
           </h1>
-          <p className="text-xl mb-8 text-gray-300 max-w-3xl mx-auto">
-            Watch this short video to learn our proven system that has helped over 500+ businesses scale their operations
+          <p className="text-l mb-8 text-gray-300 max-w-3xl mx-auto">
+          Deja de improvisar y descubrí el camino correcto para hacer crecer tu negocio.
+          <br/>
+          Te ayudamos con un enfoque personalizado que se adapta a tus necesidades específicas
           </p>
           
           {/* Video Container with Enhanced Border Effect */}
@@ -31,7 +36,7 @@ export function Hero() {
             <div className="video-border relative">
               <div className="aspect-video bg-black rounded-lg overflow-hidden">
                 <iframe
-                  src="https://player.vimeo.com/video/824804225?autoplay=0&title=0&byline=0&portrait=0"
+                  src="https://player.vimeo.com/video/1007071154?autoplay=0&title=0&byline=0&portrait=0"
                   className="w-full h-full"
                   allow="autoplay; fullscreen; picture-in-picture"
                   allowFullScreen
@@ -40,9 +45,9 @@ export function Hero() {
             </div>
           </div>
           
-          <CustomButton size="lg" arrow>
-            Start Your Journey Now
-          </CustomButton>
+           <div className="flex justify-center">
+                    <FAQCTAButton />
+           </div>
         </div>
       </div>
     </section>

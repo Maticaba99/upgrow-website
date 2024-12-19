@@ -17,11 +17,8 @@ export function FAQ() {
       <div className="container mx-auto max-w-[900px] relative">
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="text-5xl font-black mb-6">
-            Preguntas{" "}
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#ffb11a] to-[#ff8c00]">
-              Frecuentes
-            </span>
+          <h2 className="text-5xl font-black mb-6 bg-clip-text text-transparent bg-gradient-to-r from-white to-[#FF6B00]">
+            PREGUNTAS FRECUENTES
           </h2>
           <div className="h-1 w-24 mx-auto bg-gradient-to-r from-[#ffb11a] to-[#ff8c00] rounded-full" />
         </div>

@@ -5,7 +5,7 @@ import { CTAButton } from "@/components/ui/cta-button";
 export function FAQCTAButton() {
   return (
     <CTAButton>
-      Aplicar al Programa Ahora
+      Agenda tu llamada gratuita
     </CTAButton>
   );
 }

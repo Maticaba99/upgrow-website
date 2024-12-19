@@ -22,7 +22,7 @@ export function Header() {
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
         "backdrop-blur-md border-b",
         isScrolled
-          ? "bg-black/80 border-white/10"
+          ? "bg-black/40 border-white/10"
           : "bg-transparent border-transparent"
       )}
       style={{

@@ -4,7 +4,7 @@ export const benefits = [
   {
     icon: BarChart2,
     title: "Incremento en Ventas",
-    value: "$100,000",
+    value: "+10,000",
     description: "Alcanza un crecimiento exponencial en tus ingresos mensuales con nuestras estrategias comprobadas",
     type: "chart"
   },

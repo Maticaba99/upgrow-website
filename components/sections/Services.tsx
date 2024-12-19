@@ -3,6 +3,7 @@
 import { Check } from "lucide-react";
 import { gridPattern, radialGradient } from "@/lib/patterns";
 import { CardGlow } from "@/components/ui/card-glow";
+import { FAQCTAButton } from "./faq/CTAButton";
 
 const deliverables = [
   {
@@ -43,13 +44,14 @@ export function Services() {
       <div className="container max-w-6xl mx-auto relative">
         <div className="text-center mb-16">
           <h2 className="text-5xl font-black mb-6">
-            Everything You're Going to{" "}
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#ffb11a] to-[#ff8c00]">
-              Get
+          Cómo te ayudamos a escalar tu negocio{" "}
+          <br/>
+            <span className="text-5xl font-black mb-6 bg-clip-text text-transparent bg-gradient-to-r from-white to-[#FF6B00]">
+              PASO A PASO
             </span>
           </h2>
-          <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-            Our comprehensive service package includes everything you need to scale your business
+          <p className="text-l text-gray-300 max-w-2xl mx-auto">
+          Un enfoque personalizado para transformar tu negocio y aumentar tus ingresos
           </p>
           <div className="h-1 w-24 mx-auto bg-gradient-to-r from-[#ffb11a] to-[#ff8c00] rounded-full mt-6" />
         </div>
@@ -76,6 +78,9 @@ export function Services() {
             </CardGlow>
           ))}
         </div>
+      </div>
+      <div className="flex mt-24 justify-center">
+          <FAQCTAButton />
       </div>
     </section>
   );

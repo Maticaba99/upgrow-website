@@ -11,9 +11,7 @@ export function CardGlow({ children, className }: CardGlowProps) {
   return (
     <div 
       className={cn(
-        "relative bg-[rgba(255,255,255,0.02)] border border-[rgba(255,255,255,0.1)]",
-        "rounded-2xl p-6 transition-all duration-200",
-        "hover:transform hover:-translate-y-1",
+       "elative p-8 bg-gradient-to-b from-[#1A1A1A] to-[#121212] border border-[#262626] rounded-xl shadow-2xl hover:scale-[1.02] transition-all duration-300 group",
         className
       )}
       style={{

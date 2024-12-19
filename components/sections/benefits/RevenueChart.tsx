@@ -4,12 +4,12 @@ import { LineChart, Line, XAxis, YAxis, CartesianGrid, ResponsiveContainer } fro
 import { colors } from '@/lib/colors';
 
 const chartData = [
-  { month: 'Jan', value: 20000 },
-  { month: 'Feb', value: 35000 },
-  { month: 'Mar', value: 45000 },
-  { month: 'Apr', value: 60000 },
-  { month: 'May', value: 75000 },
-  { month: 'Jun', value: 100000 },
+  { month: 'Jan', value: 2000 },
+  { month: 'Feb', value: 3500 },
+  { month: 'Mar', value: 4500 },
+  { month: 'Apr', value: 6000 },
+  { month: 'May', value: 7500 },
+  { month: 'Jun', value: 10000 },
 ];
 
 const defaultAxisProps = {
